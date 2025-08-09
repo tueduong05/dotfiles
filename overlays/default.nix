@@ -1,4 +1,4 @@
-{inputs, ...}: let
+{...}: let
   modifications = final: prev: {
     brave = prev.brave.override {
       commandLineArgs = "--enable-wayland-ime";
