@@ -4,6 +4,7 @@
     ./common/extras/distrobox.nix
     ./common/extras/flatpak.nix
     ./common/extras/ghostty.nix
+    ./common/extras/obsidian.nix
     ./common/extras/starship.nix
     ./common/extras/zed.nix
   ];
