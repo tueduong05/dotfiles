@@ -28,6 +28,7 @@
   environment.systemPackages = with pkgs; [
     alejandra
     android-studio
+    docker-compose
     godot_4
     nil
   ];
