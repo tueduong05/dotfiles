@@ -6,6 +6,6 @@
       configurationLimit = 5;
       editor = false;
     };
-    timeout = 3;
+    timeout = 0;
   };
 }
