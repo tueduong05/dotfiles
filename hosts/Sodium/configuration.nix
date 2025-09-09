@@ -30,9 +30,9 @@
     android-studio
     docker-compose
     godot_4
-    mindustry-wayland
     nil
     nixd
+    prismlauncher
   ];
 
   programs = {
