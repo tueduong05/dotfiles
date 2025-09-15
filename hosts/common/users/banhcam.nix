@@ -10,7 +10,7 @@
     isNormalUser = true;
     extraGroups = ["wheel"];
     initialPassword = "onetwothree";
-    shell = pkgs.nushell;
+    shell = pkgs.zsh;
   };
 
   home-manager = {

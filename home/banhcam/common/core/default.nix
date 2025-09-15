@@ -24,7 +24,6 @@
     home-manager.enable = true;
 
     btop.enable = true;
-    carapace.enable = true;
     fastfetch.enable = true;
     fzf.enable = true;
     jq.enable = true;

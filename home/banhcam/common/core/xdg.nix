@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
+{config, ...}: {
   xdg = {
     enable = true;
     userDirs = {
@@ -13,8 +9,6 @@
       download = "${config.home.homeDirectory}/Downloads";
       music = "${config.home.homeDirectory}/Music";
       pictures = "${config.home.homeDirectory}/Pictures";
-      publicShare = "${config.home.homeDirectory}/Public";
-      templates = "${config.home.homeDirectory}/Templates";
       videos = "${config.home.homeDirectory}/Videos";
     };
   };
