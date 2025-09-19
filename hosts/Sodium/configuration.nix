@@ -42,8 +42,6 @@
     flatpak.enable = true;
   };
 
-  users.users.banhcam.extraGroups = lib.mkAfter ["docker"];
-
   home-manager.users."banhcam" = import ../../home/banhcam/Sodium.nix;
 
   networking.hostName = "Sodium";
