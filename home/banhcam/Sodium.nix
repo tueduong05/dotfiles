@@ -5,6 +5,7 @@
     ./common/extras/flatpak.nix
     ./common/extras/ghostty.nix
     ./common/extras/starship.nix
+    ./common/extras/syncthing.nix
     ./common/extras/zed.nix
   ];
 
