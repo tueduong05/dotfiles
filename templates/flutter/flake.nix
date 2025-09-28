@@ -18,6 +18,18 @@
           buildToolsVersions = ["35.0.0"];
           platformVersions = ["36"];
           abiVersions = ["arm64-v8a" "armeabi-v7a" "x86_64"];
+          cmakeVersions = ["3.22.1"];
+          includeNDK = true;
+          ndkVersions = ["27.0.12077973"];
+          extraLicenses = [
+            "android-googletv-license"
+            "android-googlexr-license"
+            "android-sdk-arm-dbt-license"
+            "android-sdk-license"
+            "android-sdk-preview-license"
+            "google-gdk-license"
+            "mips-android-sysimage-license"
+          ];
         };
         androidSdk = androidComposition.androidsdk;
       in
@@ -34,7 +46,9 @@
           androidSdk
           flutter
           jdk21
+          mesa-demos
         ];
+
         env = {
           ANDROID_SDK_ROOT = "${androidSdk}/libexec/android-sdk";
         };
