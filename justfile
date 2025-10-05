@@ -2,7 +2,7 @@ fmt:
   nix fmt ~/dotfiles
 
 rebuild: fmt
-  sudo nixos-rebuild switch --flake ~/dotfiles
+  nh os switch ~/dotfiles
 
 update:
   sudo nix flake update
