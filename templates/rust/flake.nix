@@ -33,6 +33,7 @@
           openssl
           pkg-config
 
+          cargo-audit
           cargo-deny
           cargo-edit
           cargo-watch
