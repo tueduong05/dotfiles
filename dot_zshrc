@@ -1,0 +1,45 @@
+# aliases
+alias l="eza --git --group-directories-first"
+alias ls="eza --git --group-directories-first"
+alias la="eza --all --git --group-directories-first"
+alias ll="eza --long --git --group-directories-first"
+alias lla="eza --all --long --git --group-directories-first"
+alias tree="eza --tree --git --group-directories-first"
+
+alias docker="podman"
+
+alias s="sl"
+
+# variables
+export EDITOR="nvim"
+export KEYTIMEOUT=1
+
+# path
+typeset -U path
+path+=("$HOME/.local/bin")
+export PATH
+
+# history
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt EXTENDED_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt SHARE_HISTORY
+
+# keybindings
+bindkey -v
+
+bindkey -M viins "^?" backward-delete-char
+bindkey -M viins "^[[3~" delete-char
+
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd "v" edit-command-line
+
+# tools
+eval "$($HOME/.local/bin/mise activate zsh)"
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/config.toml)"
+eval "$(zoxide init zsh --cmd cd)"
+source <(fzf --zsh)

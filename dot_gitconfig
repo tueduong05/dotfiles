@@ -1,0 +1,14 @@
+[user]
+    name = Tue Duong
+    email = tueduong005@gmail.com
+    signingkey = ~/.ssh/id_ed25519.pub
+[commit]
+    gpgsign = true
+[init]
+    defaultBranch = main
+[gpg]
+    format = ssh
+[pull]
+    rebase = true
+[push]
+    autoSetupRemote = true
