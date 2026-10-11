@@ -13,10 +13,11 @@ alias s="sl"
 # variables
 export EDITOR="nvim"
 export KEYTIMEOUT=1
+export VCPKG_ROOT="$HOME/vcpkg"
 
 # path
 typeset -U path
-path+=("$HOME/.local/bin")
+path+=("$HOME/.local/bin" "$VCPKG_ROOT")
 export PATH
 
 # history
