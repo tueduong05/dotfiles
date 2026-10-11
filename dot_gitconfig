@@ -7,13 +7,16 @@
 [init]
     defaultBranch = main
 [filter "lfs"]
-    clean = git-lfs clean -- %f
-    smudge = git-lfs smudge -- %f
-    process = git-lfs filter-process
     required = true
+    clean = git-lfs clean -- %f
+    process = git-lfs filter-process
+    smudge = git-lfs smudge -- %f
 [gpg]
     format = ssh
 [pull]
     rebase = true
 [push]
     autoSetupRemote = true
+
+[include]
+    path = ~/.gitconfig.local
